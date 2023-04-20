@@ -1,0 +1,31 @@
+.options {
+    padding: 2vw 5.6vw;
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: 50px;
+
+
+        &__item{
+            align-items: baseline;
+            padding: 24px 44px;
+            background: linear-gradient(31deg, #E40913 -192.17%, #170F48 80.89%);
+            margin: 4px;
+            list-style: none;
+            border-radius: 8px;
+
+            img{
+                width: 100px;
+                top: 25%;
+                left: 25%;
+            }
+        }
+    }
+
+    h3{
+        align-items: center;
+    }
+
+    
+}

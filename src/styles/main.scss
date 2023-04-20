@@ -1,27 +1,46 @@
+@use 'hero';
+@use 'options';
+@use 'faq';
+@use 'footer';
+@use 'header';
+
+@font-face{
+    font-family: NetflixSans;
+    src: url(../../assents/NetflixSans_W_Bd.woff2);
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: NetflixSans;
+    src: url(../../assents/NetflixSans_W_Rg.woff2);
+    font-weight: 400;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-$corDeFundo: #181049;
+$corDeFundo: #00081d;
 $corTextoPrincipal: #FFFFFF;
 
 
 body{
     background-color: $corDeFundo ;
+    font-family: NetflixSans, sans-serif;
 }
 
 @mixin text($fontSize: 16px){
     font-size: $fontSize;
     color: $corTextoPrincipal;
-    font-weight: 400;
+    
 }
 
 @mixin title($fontSize: 40px){
     @include text ($fontSize);
     color: $corTextoPrincipal;
-    font-weight: 700;
+    
     
 }
 
@@ -48,3 +67,41 @@ body{
 .title--small{
     @include title(32px)
 }
+
+input{
+    padding: 15px;
+    width: 30%;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 5px;
+                                    
+}
+
+.btn{
+    background-color: rgb(229, 9, 20);
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 9px;
+    font-family: NetflixSans;
+
+        &:hover{
+            background-color: lighten(rgb(214, 16, 16), 4%);
+            }
+            
+        
+}            
+
+.assinar{
+    display: flex;
+}
+
+.container{
+    padding: 2vw 5.6vw;
+
+    
+}
+
